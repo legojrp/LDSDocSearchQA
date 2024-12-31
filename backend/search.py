@@ -19,6 +19,8 @@ lds = aqa.get_corpus("corpora/lds-3jy6n1g0gn9r")
 import time
 
 def answer_question(question):
+    print(question)
+
     start = time.time()
 
 
@@ -72,7 +74,6 @@ def answer_question(question):
 
     # Assuming `array` is your input list
     full_answer = generate_full_answer(array)
-    print( "############ \n\n"+full_answer + "############ \n\n")
 
     print("time taken for fact finding:", time.time() - start)
     start = time.time()
@@ -128,4 +129,5 @@ def answer_question(question):
     text = json.loads(response.text)
 
     print("time taken for final summary:", time.time() - start)
+    print(text)
     return text
