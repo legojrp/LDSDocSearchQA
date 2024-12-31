@@ -12,7 +12,7 @@ function SearchResults({ results }) {
       setLoading(false);
     } else {
       setLoading(true);
-      fetch(`http://localhost:3050/references?query=${JSON.stringify(results.references)}`, { method: 'GET' })
+      fetch(`/api/references?query=${JSON.stringify(results.references)}`, { method: 'GET' })
         .then(response => response.json())
         .then(data => {
           console.log(data);

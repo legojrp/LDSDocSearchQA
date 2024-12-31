@@ -15,7 +15,7 @@ function App() {
     setSearched(true); // Set searched to true after starting the search
     // Simulate fetching results
     try {
-      const response = await fetch('http://localhost:3050/search?query=' + searchQuery);
+      const response = await fetch('/api/search?query=' + searchQuery);
       const data = await response.json();
       setResults({answer: data.answer, references : data.references });
     } catch (error) {
