@@ -5,7 +5,7 @@ function Header() {
   return (
     <Box textAlign="center" mb={5}>
       <Heading as="h1" size="xl">LDS Doc Search</Heading>
-      <Text mt={2}>Search for church documents, talks, and more!</Text>
+      <Text mt={2}>Search the scriptures with AI to find answers to your questions</Text>
     </Box>
   );
 }
