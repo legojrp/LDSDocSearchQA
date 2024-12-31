@@ -8,7 +8,7 @@ from google import genai
 from google.genai import types
 # Only run this block for Google AI API
 with open("api_key.env", 'r') as f:
-            api_key = file.read().strip()
+            api_key = f.read().strip()
 client = genai.Client(api_key=api_key)
 
 aqa = GeminiAQA()
