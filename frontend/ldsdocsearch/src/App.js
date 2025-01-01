@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChakraProvider, Box, Flex, Heading, Textarea, Button, Spinner } from '@chakra-ui/react';
+import { ChakraProvider, Box, Flex, Heading, Textarea, Button, Spinner, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion'; // Import motion from framer-motion
 import Header from './components/Header';
 import SearchResults from './components/SearchResults';
@@ -12,9 +12,9 @@ function App() {
 
   // Array of random placeholders
   const searchPlaceholders = [
-  "What does the Bible teach about faith in Jesus Christ?",
+  "What does the New Testament teach about faith in Jesus Christ?",
   "How is repentance described in the Book of Mormon?",
-  "What does the Bible say about charity?",
+  "What does the Old Testament say about charity?",
   "What do the scriptures teach about prayer?",
   "What is the meaning of covenants in the Old Testament?",
   "How can I receive blessings through the priesthood?",
@@ -35,7 +35,7 @@ function App() {
   "How can I overcome temptation according to scripture?",
   "What do the scriptures say about forgiveness?",
   "What does D&C 121:7-9 teach us?",
-  "What does the Bible say about Christ's second coming?",
+  "What does the Old Testament say about Christ's second coming?",
   "How is the Atonement described in the Old Testament?",
   "What do modern prophets teach about faith?"
   ];
@@ -125,6 +125,20 @@ function App() {
             </Button>
           )}
         </Flex>
+        {/* Disclaimer Footer */}
+        <Box as="footer" mt={10} textAlign="center" color="gray.500" fontSize="sm">
+          <Text>
+            DISCLAIMER: This website is not endorsed nor affiliated by The Church of Jesus Christ of Latter-day Saints.
+          </Text>
+          <Text>
+           This is an experimental project. There is no guarantee of accuracy or completeness of information provided. Any information you submit may be used to improve the website.
+          </Text>
+          <Text>
+          Last updated: January 2025  
+          </Text>
+          &copy; 2025 John Patch
+        </Box>
+
       </Box>
     </ChakraProvider>
   );

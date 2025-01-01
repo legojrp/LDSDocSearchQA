@@ -32,7 +32,6 @@ def get_reference(reference):
             verse['text'] for verse in verses 
             if verse_start <= verses.index(verse) + 1 <= verse_end
         ]
-        print (verse_texts)
         return verse_texts
 
     except:
