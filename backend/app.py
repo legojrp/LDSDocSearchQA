@@ -17,8 +17,6 @@ def search():
         response = json.loads(requests.get(f"https://openscriptureapi.org/api/scriptures/v1/lds/en/referencesParser?reference={reference}").text)
         references_given.append(response)
 
-    print (references_given)
-
     # TO DO: implement search logic
     return jsonify({'answer': answer["answer"], "references": answer["references"]})
 

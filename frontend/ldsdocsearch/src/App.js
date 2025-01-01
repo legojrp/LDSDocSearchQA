@@ -136,7 +136,7 @@ function App() {
           <Text>
           Last updated: January 2025  
           </Text>
-          &copy; 2025 John Patch
+          &copy; 2025 John Patch | <a href="https://github.com/legojrp/LDSDocSearchQA" target="_blank" rel="noopener noreferrer"> My GitHub</a>
         </Box>
 
       </Box>
